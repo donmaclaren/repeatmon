@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Voltage: {{Voltage1}}V</h1>
+
+<form action="" method = "POST">
+   <p>
+     {{form.RL1_field.label}}{{form.RL2_field.label}}{{form.RL3_field.label}}{{form.RL4_field.label}}<br><br>
+     {{form.RL1_field}}-{{form.RL2_field }}-{{form.RL3_field }}-{{form.RL4_field}}<br><br>
+     {{form.submit}}
+   </p>
+</form>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+</body>
+</html>

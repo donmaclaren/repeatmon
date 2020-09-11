@@ -1,0 +1,36 @@
+<!-- Replace your-device-ID-goes-here with your actual device ID
+    and replace your-access-token-goes-here with your actual access token-->
+    <!DOCTYPE>
+    <html>
+      <body>
+      <Left>
+      <br>
+      <br>
+      <br>
+      <form action="https://api.particle.io/v1/devices/******/led?access_token=*****" method="POST">
+        <font size="6"><strong>LED Application</font><br>
+        <br>
+       Category 1</strong><br>
+        <input type="radio" name="arg" value="LED0">Item1
+        <input type="radio" name="arg" value="LED1">Item2
+        <br>
+        <input type="checkbox" name="arg1" value="LED2">Item3
+        <br>
+        <input type="checkbox" name="arg2" value="LED3">Item4
+        <br>
+        <br>
+        
+        <br>
+        <strong>Clear All</strong><br>
+        <input type="checkbox" name="arg3" value="AllOff">Turn Off All Lights
+        <br>
+        <br>
+        
+        <input type="submit"  value="Update LEDs" >
+        
+        
+        
+      </form>
+      </Left>
+      </body>
+    </html>
